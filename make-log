@@ -1,0 +1,177 @@
+~/Evolver_SE/src (main ✗) make
+if [[ -z "glutgraph.o" ]] ; then (echo "ERROR: You need to uncomment your system's lines in Makefile.") ; fi
+rm *.o || true
+rm: *.o: No such file or directory
+touch makemark
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  calcforc.c
+^Cmake: *** [calcforc.o] Interrupt: 2
+
+~/Evolver_SE/src (main ✗) make
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  calcforc.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  variable.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  trirevis.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  stringl.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  stringq.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  model.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  fixvol.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  query.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  matrix.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  grapher.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  painter.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  filml.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  filmq.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  torvol.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  lexinit.c
+lexinit.c:2229:14: warning: address of array 'web.con_global_map' will always evaluate to 'true' [-Wpointer-bool-conversion]
+    if ( web.con_global_map )
+    ~~   ~~~~^~~~~~~~~~~~~~
+1 warning generated.
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  graphgen.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  modify.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  userio.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  boundary.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  curtest.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  display.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  yexparse.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  lexyy.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  ytab.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  hessian.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  evaltree.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  cnstrnt.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  verpopst.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  popfilm.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  machine.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  veravg.c
+veravg.c:412:13: warning: logical not is only applied to the left hand side of this bitwise operator [-Wlogical-not-parentheses]
+     { if ( !get_eattr(e_id) & BOUNDARY ) goto dotail;
+            ^                ~
+veravg.c:412:13: note: add parentheses after the '!' to evaluate the bitwise operator first
+     { if ( !get_eattr(e_id) & BOUNDARY ) goto dotail;
+            ^
+             (                         )
+veravg.c:412:13: note: add parentheses around left hand side expression to silence this warning
+     { if ( !get_eattr(e_id) & BOUNDARY ) goto dotail;
+            ^
+            (               )
+veravg.c:449:13: warning: logical not is only applied to the left hand side of this bitwise operator [-Wlogical-not-parentheses]
+     { if ( !get_eattr(e_id) & BOUNDARY ) return;
+            ^                ~
+veravg.c:449:13: note: add parentheses after the '!' to evaluate the bitwise operator first
+     { if ( !get_eattr(e_id) & BOUNDARY ) return;
+            ^
+             (                         )
+veravg.c:449:13: note: add parentheses around left hand side expression to silence this warning
+     { if ( !get_eattr(e_id) & BOUNDARY ) return;
+            ^
+            (               )
+2 warnings generated.
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  pixgraph.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  tmain.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  tordup.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  wulff.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  help.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  psgraph.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  check.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  utility.c
+utility.c:3449:9: warning: address of array 'transform_expr' will always evaluate to 'true' [-Wpointer-bool-conversion]
+    if (transform_expr && *transform_expr)
+        ^~~~~~~~~~~~~~ ~~
+1 warning generated.
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  skeleton.c
+skeleton.c:182:15: warning: logical not is only applied to the left hand side of this bitwise operator [-Wlogical-not-parentheses]
+         if ( !get_eattr(e_id) & BDRY_CONTENT ) continue;
+              ^                ~
+skeleton.c:182:15: note: add parentheses after the '!' to evaluate the bitwise operator first
+         if ( !get_eattr(e_id) & BDRY_CONTENT ) continue;
+              ^
+               (                             )
+skeleton.c:182:15: note: add parentheses around left hand side expression to silence this warning
+         if ( !get_eattr(e_id) & BDRY_CONTENT ) continue;
+              ^
+              (               )
+1 warning generated.
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  storage.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  dump.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  iterate.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  filgraph.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  zoom.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  softimag.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  mvgraph.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  diffuse.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  sqcurve.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  klein.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  command.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  hidim.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  simplex.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  metric.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  torus.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  quotient.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  alice.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  sdrv.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  odrv.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  userfunc.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  kusner.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  simequi2.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  geomgraph.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  symtable.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  exprint.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  quantity.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  meanint.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  mindeg.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  dodecGroup.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  registry.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  khyp.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  gauss.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  knot1.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  eval_all.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  lexinit2.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  evalmore.c
+evalmore.c:3797:23: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+          sprintf(msg,s);
+                      ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:56: note: expanded from macro 'sprintf'
+  __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                       ^~~~~~~~~~~
+evalmore.c:3797:23: note: treat the string as an argument to avoid this
+          sprintf(msg,s);
+                      ^
+                      "%s", 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:56: note: expanded from macro 'sprintf'
+  __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                       ^
+evalmore.c:3805:26: warning: format string is not a string literal (potentially insecure) [-Wformat-security]
+          sprintf(errmsg,s);
+                         ^
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:56: note: expanded from macro 'sprintf'
+  __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                       ^~~~~~~~~~~
+evalmore.c:3805:26: note: treat the string as an argument to avoid this
+          sprintf(errmsg,s);
+                         ^
+                         "%s", 
+/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/usr/include/secure/_stdio.h:47:56: note: expanded from macro 'sprintf'
+  __builtin___sprintf_chk (str, 0, __darwin_obsz(str), __VA_ARGS__)
+                                                       ^
+2 warnings generated.
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  knot2.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  knot3.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  teix.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  sqcurve2.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  hessian2.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  hessian3.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  method1.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  method2.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  method3.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  bk.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  method4.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  method5.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  eval_sec.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  sqcurve3.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  metis.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  lagrange.c
+gcc -O3 -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I/System/Library/Frameworks/GLUT.framework/Versions/A/Headers -c  glutgraph.c
+glutgraph.c:65:10: fatal error: 'glut.h' file not found
+#include <glut.h>
+         ^~~~~~~~
+1 error generated.
+make: *** [glutgraph.o] Error 1
