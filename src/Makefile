@@ -8,18 +8,18 @@ SHELL= /bin/sh
 # at brakke@susqu.edu.
 
 # The following systems have their own sections:
-# Generic Unix 
+# Generic Unix
 # Linux OpenGL
 # Linux OpenGL with 128-bit floating point quadmath library
-# Linux Xwindows 
-# cygwin 
+# Linux Xwindows
+# cygwin
 # Mac OSX
-# Sun Xwindows 
-# 32-bint Solaris OpenGL 
+# Sun Xwindows
+# 32-bint Solaris OpenGL
 # 64-bint Solaris OpenGL
 
-# NOTE: -DOOGL should be specified in CFLAGS if you want Evolver to 
-# be able to use geomview.  And -DOOGL is harmless in any case. 
+# NOTE: -DOOGL should be specified in CFLAGS if you want Evolver to
+# be able to use geomview.  And -DOOGL is harmless in any case.
 
 # NOTE: You can use the readline input editing system (if your system has it)
 # by adding -DUSE_READLINE to CFLAGS and  -lreadline -lcurses to GRAPHLIB.
@@ -34,26 +34,26 @@ SHELL= /bin/sh
 # Can also add -DLONGDOUBLE to use the long double floating point datatype
 # (but that is slower and not recommended for general use).
 
-CC= gcc -O3 
+CC= gcc -O3
 
 #---------------------Start of system choices---------------------------------
 
 # Remove #'s from following 3 lines for generic Unix without builtin graphics.
 # Add -DOOGL to CFLAGS if you are using geomview.
 #CFLAGS= -DGENERIC
-#GRAPH= nulgraph.o 
-#GRAPHLIB= 
+#GRAPH= nulgraph.o
+#GRAPHLIB=
 
 #---- Generic Unix -----------------------------------------------------------
 
-# Remove #'s from following 3 lines for generic Unix with X-windows. 
+# Remove #'s from following 3 lines for generic Unix with X-windows.
 # Add -DOOGL to CFLAGS if you are using geomview.
-# You might have to add something like -I/usr/X11R6/include to CFLAGS if 
+# You might have to add something like -I/usr/X11R6/include to CFLAGS if
 # there is a problem finding Xlib.h while compiling xgraph.c, and add
 # -L/usr/X11R6/lib to GRAPHLIB.
 #CFLAGS= -DGENERIC
-#GRAPH= xgraph.o 
-#GRAPHLIB= -lX11 
+#GRAPH= xgraph.o
+#GRAPHLIB= -lX11
 #some places might have -lX11-mit
 
 #----- Linux OpenGL ----------------------------------------------------------
@@ -62,7 +62,7 @@ CC= gcc -O3
 # The graphics are on a second thread, so pthreads are needed.
 # NOTE: -DPTRHEADS is necessary with glutgraph.o.
 #CFLAGS= -DLINUX -DOOGL -DPTHREADS
-#GRAPH= glutgraph.o 
+#GRAPH= glutgraph.o
 #GRAPHLIB= -lGL -lGLU -lglut -lpthread
 # NOTE: It has been reported to me that RedHat 9 needs the following line
 # for GRAPHLIB, but earlier and later versions do okay with the GRAPHLIB
@@ -76,34 +76,34 @@ CC= gcc -O3
 # The graphics are on a second thread, so pthreads are needed.
 # NOTE: -DPTRHEADS is necessary with glutgraph.o.
 #CFLAGS= -DLINUX -DOOGL -DPTHREADS -DFLOAT128
-#GRAPH= glutgraph.o 
+#GRAPH= glutgraph.o
 #GRAPHLIB= -lGL -lGLU -lglut -lpthread /usr/lib64/libquadmath.so.0
 
 #------ Linux Xwindows ------------------------------------------------------
 
 # Remove #'s from following 3 lines for LINUX with crummy Xwindows graphics.
 # You may have to modify the X11 lib path given here.
-#CFLAGS= -DLINUX -DOOGL 
-#GRAPH= xgraph.o 
-#GRAPHLIB= -L/usr/X11R6/lib -lX11 
+#CFLAGS= -DLINUX -DOOGL
+#GRAPH= xgraph.o
+#GRAPHLIB= -L/usr/X11R6/lib -lX11
 
 #-------- cygwin --------------------------------------------------------------
 
 # Remove #'s from the following three lines for cygwin.
 #CFLAGS= -DLINUX -DOOGL -DPTHREADS
-#GRAPH= glutgraph.o 
+#GRAPH= glutgraph.o
 #GRAPHLIB=   -lglut -lglu32 -lopengl32 -lpthread
 
 #------- Mac OSX -------------------------------------------------------------
 
 # Remove #'s from following 5 lines for MAC OSX with OpenGL GLUT graphics.
-#INC=/System/Library/Frameworks/GLUT.framework/Versions/A/Headers
-#CFLAGS= -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I$(INC)
-#GRAPH= glutgraph.o
-#GLDIR=/System/Library/Frameworks/OpenGL.framework/Libraries
-#GRAPHLIB= -L$(GLDIR)  -lGL -lGLU -lobjc  -framework GLUT
+INC=/System/Library/Frameworks/GLUT.framework/Versions/A/Headers
+CFLAGS= -DLINUX -DPTHREADS -DOOGL -DMAC_OS_X -I$(INC)
+GRAPH= glutgraph.o
+GLDIR=/System/Library/Frameworks/OpenGL.framework/Libraries
+GRAPHLIB= -L$(GLDIR)  -framework OpenGL -lobjc  -framework GLUT
 
-# Note: to get backward compatibility to older versions of Mac OSX, 
+# Note: to get backward compatibility to older versions of Mac OSX,
 # add this to CFLAGS:   -mmacosx-version-min=10.4
 
 #------- Sun Xwindows --------------------------------------------------------
@@ -112,14 +112,14 @@ CC= gcc -O3
 # WARNING: If you use -O2 optimization, you may have to compile popfilm.c
 # without optimization, because sun optimization may hang.
 #CFLAGS= -DSUN -DOOGL -I/usr/openwin/include
-#GRAPH= xgraph.o 
-#GRAPHLIB= -L/usr/openwin/lib  -lX11 
+#GRAPH= xgraph.o
+#GRAPHLIB= -L/usr/openwin/lib  -lX11
 
 #------- 32-bint Solaris OpenGL ------------------------------------------------------
 
 # 32-bit SOLARIS with GLUT.  The GLUT graphics window runs in a separate
 # thread;  -DPTHREADS enables threads in Evolver source code, and -mt
-# enables it in the Solaris cc compiler.  For the gcc compiler, use -pthreads 
+# enables it in the Solaris cc compiler.  For the gcc compiler, use -pthreads
 # instead of -mt.
 # You should check to see that the GLUTHOME directory listed below exists;
 # it may be some other place on your machine.  If you can't find it,
@@ -127,7 +127,7 @@ CC= gcc -O3
 #GLUTHOME= /usr/local/sparc_solaris/glut-3.7
 #INCLUDE= -I/usr/openwin/include -I$(GLUTHOME)/include
 #CFLAGS= -DSUN -DOOGL -DGLUT -DPTHREADS -mt $(INCLUDE)
-#GRAPH= glutgraph.o 
+#GRAPH= glutgraph.o
 #GRAPHLIB= -L/usr/openwin/lib  -lX11 -L$(GLUTHOME)/lib/glut -lglut -lGL -lGLU -lXmu
 
 #------- 64-bint Solaris OpenGL ------------------------------------------------------
@@ -138,8 +138,8 @@ CC= gcc -O3
 # download glut-3.7b.sparc_solaris_64.tar.gz from www.sun.com.
 #GLUTHOME= /usr/local/sparc_solaris_64bit/glut-3.7
 #INCLUDE= -I/usr/openwin/include -I$(GLUTHOME)/include
-#CFLAGS= -DSUN -DOOGL -DGLUT -DPTHREADS -mt $(INCLUDE) -m64 
-#GRAPH= glutgraph.o 
+#CFLAGS= -DSUN -DOOGL -DGLUT -DPTHREADS -mt $(INCLUDE) -m64
+#GRAPH= glutgraph.o
 #GRAPHLIB= -L/usr/openwin/lib  -lX11 -L$(GLUTHOME)/lib/glut -lglut -lGL -lGLU -lXmu
 
 #Note on Solaris:
@@ -149,7 +149,7 @@ CC= gcc -O3
 
 #-----------------------------------------------------------------------------
 
-# Remove #'s from following 3 lines for DEC Alpha with X-windows 
+# Remove #'s from following 3 lines for DEC Alpha with X-windows
 # Add -DOOGL to CFLAGS if you have the X version of geomview.
 #CFLAGS= -DDECALPHA -O -Olimit 2000
 #GRAPH= xgraph.o
@@ -158,25 +158,25 @@ CC= gcc -O3
 #-----------------------------------------------------------------------------
 
 # IRIX 4, with old gl graphics
-# Remove #'s from the following three lines for Iris workstations with 
+# Remove #'s from the following three lines for Iris workstations with
 # geomview.  Those with R4000 CPUs or above may add -mips2 to CFLAGS.
-#CFLAGS = -DIRIS -DOOGL -O2 -Olimit 3000 
+#CFLAGS = -DIRIS -DOOGL -O2 -Olimit 3000
 #GRAPH= iriszgraph.o
 #GRAPHLIB=  -lgl_s -lmalloc -lc_s
 
 #-----------------------------------------------------------------------------
 
 # IRIX 5
-# Remove #'s from the following three lines for Iris workstations with 
+# Remove #'s from the following three lines for Iris workstations with
 # geomview.  Those with R4000 CPUs or above may add -mips2 to CFLAGS.
-#CFLAGS = -DIRIS -DOOGL -O2 -Olimit 3000 
+#CFLAGS = -DIRIS -DOOGL -O2 -Olimit 3000
 #GRAPH= xgraph.o
 #GRAPHLIB=   -lmalloc -lX11
 
 #-----------------------------------------------------------------------------
 
 # IRIX 5, parallel
-# Remove #'s from the following three lines for Iris workstations with 
+# Remove #'s from the following three lines for Iris workstations with
 # multiple processors and geomview.  OK for single processors, too.
 # Those with R4000 CPUs or above may add -mips2 to CFLAGS.
 #CFLAGS = -DIRIS -DOOGL -DSGI_MULTI -O2 -Olimit 3000 -mips2
@@ -186,7 +186,7 @@ CC= gcc -O3
 #-----------------------------------------------------------------------------
 
 # IRIX 6
-# Remove #'s from the following three lines for Iris workstations with 
+# Remove #'s from the following three lines for Iris workstations with
 # IRIX 6.x operating system.  Add -DSGI_MULTI to CLFAGS if you
 # have multiple processors.
 #CFLAGS = -DIRIS -DOOGL -O2 -OPT:Olimit=10000
@@ -207,8 +207,8 @@ CC= gcc -O3
 # Remove #'s from following 3 lines for NeXTStep without screen graphics
 # (see separate ftp archive evolver.next.tar.Z for graphics version)
 #CFLAGS= -DNeXT
-#GRAPH= nulgraph.o 
-#GRAPHLIB= 
+#GRAPH= nulgraph.o
+#GRAPHLIB=
 
 #-------------------End of system-specific options----------------------------
 
@@ -230,7 +230,7 @@ OBJ= calcforc.o  variable.o trirevis.o  stringl.o stringq.o model.o\
 
 
 evolver: makemark  $(OBJ)  $(GRAPH)
-	$(CC) $(CFLAGS)  $(OBJ) $(GRAPH) $(GRAPHLIB) -o evolver -lm   
+	$(CC) $(CFLAGS)  $(OBJ) $(GRAPH) $(GRAPHLIB) -o evolver -lm
 
 # This is to get global dependencies on the main header files.
 makemark: skeleton.h storage.h model.h web.h
@@ -240,7 +240,7 @@ makemark: skeleton.h storage.h model.h web.h
 
 .c.o:
 	$(CC) $(CFLAGS) -c  $<
- 
+
 
 # lexyy.c and ytab.c should only be remade when interface
 # language is changed, which users shouldn't be touching.
@@ -258,7 +258,7 @@ makemark: skeleton.h storage.h model.h web.h
 #	cp y.tab.h ytab.h
 #	rm y.tab.c y.tab.h
 
-ytab.h: ytab.c 
+ytab.h: ytab.c
 
 lexinit.o: lex.h lexinit.c express.h ytab.h
 
